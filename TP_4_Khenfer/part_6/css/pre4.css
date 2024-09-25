@@ -1,0 +1,30 @@
+section {
+    padding : 10px;
+    border: 1px solid grey;
+    height: 200px;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+  }
+  
+  p {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: calc(25% - 0.5em);
+    padding: .5em;
+    display: inline-block;
+    border: 1px solid grey;
+    vertical-align: middle;
+    line-height: normal;
+    margin: auto;
+    
+  } 
+
+  /*
+  Les 4 boîtes occupant 100 % de la largeur de leur conteneur, on devrait pouvoir fixer width: 25 %;. Dans ce cas là, est-il possible de faire tenir les 4 boîtes dans la largeur ?
+  > Non, il faut effectuer un calcul en enlevant de la largeur le padding de 0.5em (=8px nativement considérant que aucune autre propriété CSS ne précise le contraire).
+
+  En vous basant sur des propriétés typographiques, pouvez-vous expliquer le problème et lui trouver 1 solution ?
+  > 1em = 16px sauf propriété CSS contraire l'indiquant ua niveau de l'élément parent, en l'occurence "section". En enlevant cette marge interne de 0.5em, nous obtenons la largeur réel des boîtes permettant ainsi d'être redistribué à part égal aisément.
+  
+  */

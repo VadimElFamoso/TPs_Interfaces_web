@@ -1,0 +1,48 @@
+.bt {
+    background-color: #FFDC00;
+    height: 2em;
+    line-height: 2em;
+}
+
+.jauge {
+    background-color: #39CCCC;
+    color: white;
+    padding: 0;
+    border: 0;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.b1{
+    width: 100px;
+    padding: 10px 175px 10px 400px;
+    border-left: 10px solid red;
+    border-right: 25px solid red;
+}
+
+.j1{
+    width: 710px;
+}
+
+.b2{
+    box-sizing: border-box;
+    width: 100px;
+    padding: 10px 2% 10px 4%;
+    border-left: 10px solid red;
+    border-right: 25px solid red;
+
+}
+
+.j2{
+    width: calc(100px);
+}
+
+/*
+Compléter la boîte .b2 avec la propriété box-sizing: border-box ; quelle est l’influence de cette propriété sur la place occupée par la boite ? Utilisez ce constat pour fixer la taille de la jauge .j2 pour qu’elle occupe la même largeur que la boite .b2 dans tous les cas.
+La taille de la boîte est diminuée à  sa border-box et non plus à sa content-box. La border-box pour calculer la largeur prend compte du padding (si défini) et de la border (si défini). Ainsi, le comportement natif content-box compte ses deux paramètres en plus du margin. Nous réduisons donc la largeur calculée de notre boîte provoquant une destructuration.
+
+
+Résumez l’effet et l’interêt de la propriété box-sizing. Quelles sont les valeurs qu’elles peut prendre ?
+> Box-sizing peut prendre deux valeurs : "content-box" et "border-box". L'intérêt est d'homogénéiser les calculs de largeur et de hauteur.
+
+
+*/

@@ -1,0 +1,121 @@
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #222;
+}
+
+
+/* ===========================================================
+   custom styles
+   ======================================================== */
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    background-color: #39CCCC;
+    height: 35px;
+    margin: 0;
+    margin-bottom: 1px;
+}
+/*
+<p class="px100">100px</p>
+<p class="px320">320px</p>
+<p class="px480">480px</p>
+<p class="pt100">100pt</p>
+<p class="px72">72px</p>
+<p class="pt72">72pt</p>
+<p class="inch1">1 inch</p>
+<p class="px96">96px</p>
+<p class="pourc20"> 20%</p>
+<p class="pourc100"> 100%</p>
+<p class="vw20"> 20 vw</p>
+<p class="vh20"> 20vh</p>
+<p class="em5"> 5em</p>
+<p class="em20">20em</p>
+<p class="cm5">5cm</p>
+<p class="cm30">30cm</p>
+*/
+
+
+.px100{
+    width: 100px;
+}
+.px320{
+    width: 320px;
+}
+.px480{
+    width: 480px;
+}
+.pt100{
+    width: 100pt;
+}
+.px72{
+    width: 72px;
+}
+.pt72{
+    width: 72pt;
+}
+.inch1{
+    width: 1in;
+}
+.px96{
+    width: 96px;
+}
+.pourc20{
+    width: 20%;
+}
+.pourc100{
+    width: 100%;
+}
+.vw20{
+    width: 20vw;
+}
+.vh20{
+    width: 20vh;
+}
+.em5{
+    width: 5em;
+}
+.em20{
+    width: 20em;
+}
+.cm5{
+    width: 5cm;
+}
+.cm30{
+    width: 30cm;
+}
+
+
+.f36{
+    font-size: 36px;
+}
+
+/*
+Faites varier la largeur de votre fenêtre de navigation : quelles sont les boites dont la taille change et ne change pas ?
+> A l'exception des boîtes qui ont les classes "vw20" et "20vw", aucune des boîtes ne change de taille lors du redimensionnement de la fenêtre de navigation.
+
+
+Déduire de vos observations la relation entre pt,inch et px – vérifier en créant sur le même modèle des boites de différentes tailles exprimées en pt, en inch et en px.
+> 96px = 1inch = 72pt.
+
+Sur le même principe, trouver la relation entre cm , inch et pt, et la relation entre px et em.
+> 1inch = 72pt = 2.54cm.
+> 1em = 16px;
+
+Décommentez la partie 2 du fichier html, et définir la classe .pourc100. Pourquoi la boîte définie par <p class="pourc100"> 100%</p>, qui apparaît 2 fois, n’a pas la même taille ? Quelle est la différence entre les unités % et vw / vh ?
+> La taille exprimée en pourcentage prend en référence la taille de l'élément parent. Dans la partie 1, aucun élément parent à nos éléments p existe, par défaut le comportement va être d'occuper la largeur de la fenêtre. Dans la partie 2, l'élément parent est la div de class "px480" qui définit une largeur de 480px. Dans ce cas et par conséquent, width: 100% est égal à 480px, c'est-à-dire la largeur totale de l'élément parent.
+> Comme dit précédemment le % est une unité relative au parent de l'élément ciblé. Si mon parent fait 480px de large, width: 100% vaudra une width de 480px. Vw (Viewport Width) et Vh (Viewport Height) sont deux unités faisant abstraction de l'héritage et représentent respectivement 1/100e de la largeur de la fenêtre d'affichage pour Vw et 1/100e de la hauteur de la fenêtre d'affichage pour Vh.
+
+Définir la classe .f36, qui positionne font-size: 36px. Pourquoi la boîte définie par <p class="em5"> 5em</p>, qui apparaît 2 fois n’a pas la même taille dans les 2 cas ?
+> Par convention, la boîte définie ne possédant aucun parent, 1em = 16px. Ainsi, la largeur de la première boîte est 16px * 5 = 80px = 5em.
+Pour la deuxième boîte, une taille de police est définie à son élément parent. Dans ce cadre, la valeur d'un em est égale à cette valeur soit 36px. Ainsi on obtient :
+36px * 5 = 180px = 5em.
+Cela explique pourquoi les deux boîtes n'ont pas la même taille.
+
+*/

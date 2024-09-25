@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 100%;
+}
+
+.boite{
+    background-color: red;
+    display: block;
+    height: 20px;
+    width: 1000pt;
+}
+/* .boite:nth-child(1){
+    width: 1920px;
+}
+.boite:nth-child(2){
+    width: 1440pt;
+}
+
+.boite:nth-child(3){
+    width: 100%;
+}
+
+.boite:nth-child(4){
+    width: 120em;
+} */
+
+/*
+Sachant qu’un pouce(inch) vaut 72 points (pt) en déduire la résolution (nombre de pixels par pouce) de votre écran.
+>Calcul : squareroot(1920²+1080²)=2202,9.
+La diagonale de l'écran mesurant 20 pouces on fait :
+2202,9/20 = 110.145 ppi.
+
+Changer la taille de la police globale (font-size de body) en partant de petit à très grand
+
+Que constatez-vous ?
+> En fonction de la taille de police, le texte overflow hors de sa boîte. De plus, le texte configuré avec une grande taille de police a tendance à se superposer.
+Qu’en concluez-vous sur quelle unité?
+Les unités relatives comme em, rem ou encore px permettent de définir aisément une taille de texte. Cela dit, seul le % permet au texte de s'adapter à la taille de son conteneur et en précision sa hauteur évitant ainsi les phénomènes d'overflow et de superposition précédemment observés.
+*/
+
+

@@ -1,0 +1,65 @@
+.bh {
+    width: 10em;
+    height: 10em;
+    background-color: #FFDC00;
+    margin-left: 20px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.bv {
+    width: 150px;
+    height: 5em;
+    background-color: #FF9640;
+}
+
+.bv2 {
+    width: 100%;
+    height: 12em;
+    margin-top: 50px;
+    border: 20px solid blue;
+    background-color: #77ffb8;
+}
+
+.bv3 {
+    width: 100%;
+    height: 7em;
+    margin-bottom: 50px;
+    background-color: #31b9ff;
+}
+
+.mgbottom{
+    margin-bottom: 50px;
+}
+
+.mgtop{
+    margin-top: 50px;
+}
+
+
+/*
+Etendre de nouveau cette classe pour fixer une marge droite. Quel est l’écartement entre les boites ? En déduire la règle de combinaison des marges horizontales.
+> L'ecartement entre les boites est de 70px. Nous additionnons le margin-left avec le margin-right pour obtenir cette valeur.
+
+Visualiser les boites de la dernière partie (classe .bv2 et boite incluse). Ajouter une marge haute de 50px à la boîte interne (.bv) en lui ajoutant la classe .mgtop. Que constate-t-on ?
+Si le margin bottom et le margin top sont de même valeur, l'écart reste fixée à cette valeur. Si cette valeur diffère entre le margin-top et le margin-bottom, les deux sont additionnés.
+
+Ajouter une marge haute de 50px à la boite externe (.bv2). Que constate-t-on ?
+> Nous constatons que la marge haute se repercute également sur la boite enfant "bv".
+
+Ajouter une marge basse de 50px à la boîte verticale juste au dessus. Que constate-t-on ?
+> Aucun changement ne se produit, le margin-bottom de cette boîte (50px) étant égal au margin-top  de la boîte bv3.
+
+Compléter la règle de combinaison des marges verticales.
+> Même principe que pour les marges horizontales. Si les deux valeurs pour la marge supérieur et inférieur sont similaires, aucun changement ne se produit. Dans l'autre cas, les deux marges sont additionnés.
+
+Modifier la boite externe (.bv2) en étendant la définition de la classe de façon à ajouter du padding dans cette boite. Visualiser. Que constate-t-on ?
+> La boîte élémentaire qui est enfant de bv2 est "poussée" vers l'intérieur. Une marge interne se créé.
+
+Enlever le padding et le remplacer par une bordure. Visualiser. Que constate-t-on ?
+> Le resultat est le même, en enlevant le padding et pour une même valeur, en l'occurence 20px une marge interne se créé de la même façon poussant l'élément enfant vers l'intérieur bien que le padding soit une marge interne et non la border.
+
+Enoncer la règle complète de fusion des marges verticales.
+> Pour un margin-top ou un margin-bottom de même valeur, les marges sont fusionnés : le margin entre deux éléments et donc égal à cette même et seule valeur. Dans le cas où deux valeurs différentes sont renseignées : le margin est calculé dépendamment de ces deux valeurs et son résultat est formé de l'addition de ces deux dernières.
+
+*/
