@@ -1,0 +1,10 @@
+p{
+    color: brown;
+}
+div p:first-child{
+    background-color: midnightblue;
+}
+
+div p:last-child{
+    background-color: peachpuff;
+}
