@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 50px;
+}
+
+
+.img1{
+    float: left;
+}
+
+.img2{
+    float: left;
+}
+
+
+p:first-child, p:nth-child(2){
+    clear: both;
+}
+
+p img{
+    height: auto;
+    width: 150px;
+}
+
+/*
+Au fait, dans le dernier affichage, où est passé le padding des paragraphes de texte lorsqu’il coule autour des images ?
+> Le padding des paragraphes du texte lorsque les images sont en mode float, ce dernier est redistribué également au niveau des images.
+
+que se passe-t-il si on met une marge à gauche sur ces paragraphes ?
+> Le margin-left est égaelement repercuté sur les images.
+
+comment faire pour avoir un espace entre les images et le texte ?
+> Pour se faire, il faut intégrer un padding aux paragraphes.
+*/

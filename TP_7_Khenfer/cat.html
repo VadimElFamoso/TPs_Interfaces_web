@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cat.css">
+    <title>Document</title>
+</head>
+<body>
+    <picture>
+        <!-- Version redécoupée pour les petits écrans (inférieurs à 640px) -->
+        <source srcset="img/crop/cat-cropped-small.jpg" media="(max-width: 640px)">
+        <!-- Version pour les grands écrans avec différentes résolutions -->
+        <source srcset="
+            img/large/cat-1920x1285.jpg 1920w, 
+            img/medium/cat-1024.jpg 1024w, 
+            img/small/cat-400x266.jpg 400w, 
+            img/crop/cat-cropped-small.jpg 320w"
+            sizes="(max-width: 1200px) 80vw, 1920px">
+        <!-- Image de secours si le navigateur ne supporte pas <picture> -->
+        <img src="large/cat-1920x1285.jpg" alt="Photo d'un chat">
+    </picture>
+</body>
+</html>
